@@ -79,7 +79,7 @@ namespace GitReleaseNotes
                 return false;
             }
             return IssueTrackerFactory.TryCreateIssueTrackerFromUrl(
-                upstream.Url,
+                upstream.Url, context.IssueTracker.ProjectId,
                 context.IssueTracker.Authentication.ToIssueTrackerSettings(),
                 out issueTracker);
         }
