@@ -8,7 +8,6 @@ namespace GitReleaseNotes
     {
         [Description("The directory of the Git repository to determine the version for; " +
                      "if unspecified it will search parent directories recursively until finding a Git repository.")]
-        [ArgsMemberSwitch(0)]
         public string WorkingDirectory { get; set; }
 
         [Description("Enables verbose logging")]
